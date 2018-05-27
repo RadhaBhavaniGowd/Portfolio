@@ -1,70 +1,95 @@
 *{
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, "Times New Roman", "Courier New", "Sans Serif" ;
-  margin:0;
-  padding:0;
-} 
-.responsive-image{
-  height:auto;
-  max-width:100%;
-  margin: 1em;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, "Times New Roman", "Courier New", "Sans Serif";
+	margin:0;
+	padding:0;
 }
-.content-header, .top, .hero-image{
+.content-image, .main-image, .logo-image{
+	height:auto;
+	max-width:100%;
+}
+.logo-image{
+	margin: 1em;
+}
+.content-header, .top, .main-image, .user-title{
 	text-align:center;
 }
-.featured-link{
-	text-align:center;
-}
-.featured-items {
+.project-contents {
 	margin-top:4%;
 }
-.header, .featured-items{
-display: flex;
-flex-wrap: wrap;
-margin:auto;
+.project-worked:hover {
+	background-color: yellow;
 }
-.featured-work{
+.header, .project-contents{
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+}
+footer{margin-bottom:4%;}
+
+.footer-text{
+  font-size:1em;
+  text-align:center;
+  color:grey;
+}
+.project-worked{
 	width:33%;
 	padding:1%;
 }
-.featured-items{
+.project-contents{
 	margin-right:auto;
 }
+/*For small screen devices */
 @media only screen and (max-device-width : 767px){
 body{
 	background-color:green;
 }
-.featured-work{
+.project-worked{
 	flex: 1 100%;
 }
 .content-header{
 	font-size:1.5em;
 }
-.header-full-name{
+.user-name{
+	font-size:2em;
+}
+.header-portfolio{
 	font-size:1.5em;
 }
+.project-contents{
+	text-align: center;
 }
+}
+
 /* For bigger screens */
 @media only screen and (min-device-width : 768px) 
-and (max-device-width : 1023px)  {
-  
+and (max-device-width : 1023px){
 body{
 	background-color:blue;
 }
 .content-header{
 	font-size:1.5em
 }
-.header-full-name{
-	font-size:2.5em;
-}       
+.user-name{
+	font-size:2em;
+}
+.header-portfolio{
+	font-size:1.5em;
+}
+.project-contents{
+	text-align: center;
+}
 }  
 
-/*Desktop */
- @media only screen and (min-device-width : 1024px) {
+/*Larger screen like Desktop */
+@media only screen and (min-device-width : 1024px){
 .content-header{
-	font-size:3em;
+	font-size:2em;
 }
-.header-full-name{
-	font-size:5em;
+.user-name{
+	font-size:2.5em;
+}
+.header-portfolio{
+	font-size:2em;
 }
 }
