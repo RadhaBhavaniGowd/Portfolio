@@ -1,95 +1,127 @@
-*{
+* {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, "Times New Roman", "Courier New", "Sans Serif";
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
-.content-image, .main-image, .logo-image{
-	height:auto;
-	max-width:100%;
+
+.content-image,
+.main-image,
+.logo-image{
+	height: auto;
+	max-width: 100%;
 }
+
 .logo-image{
 	margin: 1em;
 }
-.content-header, .top, .main-image, .user-title{
-	text-align:center;
+
+.main-image,
+.content-header,
+.top,
+.user-title{
+	text-align: center;
 }
+
 .project-contents {
-	margin-top:4%;
+	margin-top: 4%;
 }
+
 .project-worked:hover {
 	background-color: yellow;
 }
-.header, .project-contents{
+
+.header,
+.project-contents{
 	display: flex;
 	flex-wrap: wrap;
-	margin:auto;
+	margin: auto;
 }
-footer{margin-bottom:4%;}
+
+footer{
+	margin-bottom: 4%;
+}
 
 .footer-text{
-  font-size:1em;
-  text-align:center;
-  color:grey;
+  font-size: 1em;
+  text-align: center;
+  color: grey;
 }
+
 .project-worked{
-	width:33%;
-	padding:1%;
+	width: 33%;
+	padding: 1%;
 }
+
 .project-contents{
-	margin-right:auto;
+	margin-right: auto;
 }
+
+/*To fit image for very small screens */
+@media screen and (max-width: 480px){   
+    #portfolio-img{      
+        content:url("../img/iot-hero-small.jpg");
+    } 
+}
+
 /*For small screen devices */
-@media only screen and (max-device-width : 767px){
+@media only screen and (max-width: 767px){
+
 body{
-	background-color:green;
+	background-color: green;
 }
+
 .project-worked{
 	flex: 1 100%;
 }
+
 .content-header{
-	font-size:1.5em;
+	font-size: 1.5em;
 }
+
 .user-name{
-	font-size:2em;
+	font-size: 2em;
 }
+
 .header-portfolio{
-	font-size:1.5em;
-}
-.project-contents{
-	text-align: center;
+	font-size: 1.5em;
 }
 }
 
 /* For bigger screens */
-@media only screen and (min-device-width : 768px) 
-and (max-device-width : 1023px){
+@media only screen and (min-width: 768px) 
+and (max-width: 1023px){
+
 body{
-	background-color:blue;
+	background-color: blue;
 }
+
 .content-header{
-	font-size:1.5em
+	font-size: 1.5em;
 }
+
 .user-name{
-	font-size:2em;
+	font-size: 2em;
 }
+
 .header-portfolio{
-	font-size:1.5em;
+	font-size: 1.5em;
 }
-.project-contents{
-	text-align: center;
-}
+
 }  
 
 /*Larger screen like Desktop */
-@media only screen and (min-device-width : 1024px){
+@media only screen and (min-width : 1024px){
+
 .content-header{
-	font-size:2em;
+	font-size: 2em;
 }
+
 .user-name{
-	font-size:2.5em;
+	font-size: 2.5em;
 }
+
 .header-portfolio{
-	font-size:2em;
+	font-size: 2em;
 }
 }
